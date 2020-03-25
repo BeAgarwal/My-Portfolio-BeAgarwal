@@ -1,0 +1,418 @@
+#loader {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  z-index: 1;
+  width: 150px;
+  height: 150px;
+  margin: -75px 0 0 -75px;
+  border: 16px solid #f3f3f3;
+  border-radius: 50%;
+  border-top: 16px solid #000000;
+  width: 120px;
+  height: 120px;
+  -webkit-animation: spin 2s linear infinite;
+  animation: spin 2s linear infinite;
+}
+#command {
+    position: absolute;
+  margin: -75px 0 0 -75px;
+  font-size: 18px;
+  top: 80%;
+  float: left;
+  left: 40%;
+  height: 120px;
+}
+@-webkit-keyframes spin {
+  0% { -webkit-transform: rotate(0deg); }
+  100% { -webkit-transform: rotate(360deg); }
+}
+
+@keyframes spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
+#myDiv {
+  display: none;
+  text-align: center;
+}
+
+/* Add animation to "page content" */
+.animate-bottom {
+  position: relative;
+  -webkit-animation-name: animatebottom;
+  -webkit-animation-duration: 1s;
+  animation-name: animatebottom;
+  animation-duration: 1s
+}
+
+@-webkit-keyframes animatebottom {
+  from { bottom:-100px; opacity:0 } 
+  to { bottom:0px; opacity:1 }
+}
+
+@keyframes animatebottom { 
+  from{ bottom:-100px; opacity:0 } 
+  to{ bottom:0; opacity:1 }
+}
+#beagarwallogo{
+    width: auto;
+    height: 55px;
+}
+.navbar.navbar-light.navbar-expand-xl.sticky-top {
+    box-shadow: 0px 0px 20px #CCCCCC;
+    background-color: #18252A;
+    padding-left: 21px;
+    padding-top: 7px;
+    padding-bottom: 7px;
+    width: 100%;
+    max-width: 100%;
+    font-family: 'Fira Mono', monospace;
+    border-style: solid;
+    border-width: 0px 0px 1px 0px;
+    border-color: rgb(66, 0, 10);
+}
+.nav-item {
+    padding: 10px;
+}
+
+.nav-item a {
+    color: white !important;
+    font-weight: bold;
+}
+
+.nav-item a:hover {
+    color: white !important;
+    background-color: #2AA19B !important;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px #993333;  /* bright */
+    font-weight: normal;
+}
+
+.nav-item a:link {
+    color: #FFFFFF !important;
+    text-decoration: none;
+}
+
+.nav-item a:visited {
+    color: #FFFFFF !important;
+    text-decoration: none;
+}
+
+.nav-item a.active {
+    color: white !important;
+    background-color: # !important;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px #CCCCCC; /* bright */
+    font-weight: normal;
+}
+
+.nav-item a:hover {
+    color: white !important;
+    text-decoration: none;
+}
+
+.navbar-toggler {
+    background-color: white;
+}
+
+#navcol-1 {
+    font-size: 16px;
+    text-align: center;
+}
+
+.fa.fa-home, .fa.fa-star, .fa.fa-photo, .fa.fa-newspaper-o, .fa.fa-envelope {
+    margin-right: 5px;
+    margin-left: 0px;
+    margin-top: 5px;
+}
+
+body {
+    background-color: #2AA19B;
+    width: auto;
+    height: auto;
+    min-height: 0px;
+    background-size: auto;
+    background-repeat: repeat;
+    background-position: top;
+    font-size: 14px;
+}
+
+
+
+#footer{
+    width: 100%;
+    min-height: 100px;
+    font-family: 'Fira Mono', monospace;
+    position: relative;
+    background-color: #18252A;
+    top: 50px;
+}
+.social-ul-div {
+    text-align: center;
+}
+
+.social-ul-div .fa {
+  padding-right: 30px;
+  font-size: 35px;
+  color: white;
+  text-decoration: none;
+}
+/* ------------------------------------------------INDEX PAGE CSS-------------------------------------------*/
+#welcome {
+    width: 100%;
+    height: auto;
+}
+#aboutme{
+    font-family: 'Fira Mono', monospace;
+    color: white;
+    width: 75%;
+    margin: auto;
+
+}
+/* ------------------------------------------------GALLERY PAGE CSS-------------------------------------------*/
+
+#gallerycontainer{
+  height: auto;
+  width: auto;
+  text-align: center;
+  color: white;
+  margin: 150px;
+}
+/* ------------------------------------------------PROJECT PAGE CSS-------------------------------------------*/
+#sideContainer{
+  background-color: white;
+  font-size: 20px;
+  width: 25%;
+  padding-left: 10px;
+  font-family: 'Fira Mono', monospace;
+  margin: 20px;
+  box-shadow: 0px 0px 15px black;
+  border-radius: 5px;
+  border-width: 1px;
+}
+
+#projectContainer {
+    background-color: #000000;
+    margin-top: 30px;
+    margin-bottom: 20px;
+    max-width: 900px;
+    border-radius: 5px;
+    box-shadow: 0px 0px 15px black;
+    border-style: solid;
+    border-width: 1px;
+    border-color: #3ACAC3;
+}
+
+#projectRow {
+    background-color: transparent;
+}
+
+#projectColumnImg {
+    background-color: transparent;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    width: 466px;
+    min-width: 112px;
+    padding-right: 15px;
+    padding-left: 15px;
+}
+
+#projectImg {
+    background-color: white;
+    border-radius: 5px;
+    border-style: solid;
+    border-color: white;
+    border-width: 1px;
+    width: 100%;
+}
+
+#projectColumnText {
+    background-color: transparent;
+    margin-top: 0px;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    padding-right: 30px;
+    padding-left: 30px;
+}
+
+#projectTitle {
+    font-family: 'Fira Mono', monospace;
+    color: rgb(255, 255, 255);
+    font-size: 35px;
+}
+
+#projectText {
+    font-family: 'Fira Mono', monospace;
+    color: rgb(255, 255, 255);
+    margin-bottom: 0px;
+    font-size: 14px;
+}
+#submitor {
+    background-color: #2AA19B;
+    padding-bottom: 16px;
+    margin-bottom: 0px;
+}
+#submitor:hover{
+    background-color: #3ACAC3;
+}
+
+
+/* ------------------------------------------------CONTACT PAGE CSS-------------------------------------------*/
+
+.header {
+  padding: 60px;
+  text-align: center;
+  background: white;
+  color: #18252A;
+  font-size: 30px;
+  font-family: 'Fira Mono', monospace;
+}
+#facebookContainer{
+  background-color: #3b5998;
+  font-size: 25px;
+  border-color: black;
+  width: auto;
+  text-align: center;
+  padding-left: 20px;
+  font-family: 'Fira Mono', monospace;
+  margin: 20px;
+  box-shadow: 0px 0px 15px black;
+  border-radius: 5px;
+  border-color: rgb(66, 0, 10);
+}
+#facebookContainer a:hover{
+    text-decoration: none;
+}
+#githubContainer{
+  background-color: #211F1F;
+  font-size: 25px;
+  border-color: black;
+  width: auto;
+  text-align: center;
+  padding-left: 20px;
+  font-family: 'Fira Mono', monospace;
+  margin: 20px;
+  box-shadow: 0px 0px 15px black;
+  border-radius: 5px;
+  border-color: rgb(66, 0, 10);
+}
+#githubContainer a:hover{
+    text-decoration: none;
+}
+#linkedinContainer{
+  background-color: #0e76a8;
+  font-size: 25px;
+  border-color: black;
+  text-align: center;
+  width: auto;
+  padding-left: 20px;
+  font-family: 'Fira Mono', monospace;
+  margin: 20px;
+  box-shadow: 0px 0px 15px black;
+  border-radius: 5px;
+  border-color: rgb(66, 0, 10);
+}
+#linkedinContainer a:hover{
+    text-decoration: none;
+    background-color: black;
+}
+#twitterContainer{
+  background-color: #00acee;
+  font-size: 25px;
+  border-color: black;
+  width: auto;
+  text-align: center;
+  margin: 20px;
+  padding-left: 20px;
+  font-family: 'Fira Mono', monospace;
+  box-shadow: 0px 0px 15px black;
+  border-radius: 5px;
+  border-color: rgb(66, 0, 10);
+}
+#twitterContainer a:hover{
+    text-decoration: none;
+}
+#codesignalContainer{
+  background-color: #0093cc;
+  font-size: 25px;
+  border-color: black;
+  width: auto;
+  text-align: center;
+  margin: 20px;
+  padding-left: 20px;
+  font-family: 'Fira Mono', monospace;
+  box-shadow: 0px 0px 15px black;
+  border-radius: 5px;
+  border-color: rgb(66, 0, 10);
+}
+#codesignalContainer a:hover{
+    text-decoration: none;
+}
+.header2 {
+  padding: 60px;
+  text-align: center;
+  background: white;
+  color: #18252A;
+  font-size: 30px;
+  font-family: 'Fira Mono', monospace;
+  height: 150px;
+  margin-top: 150px;
+}
+/*FONT CSS*/
+
+@font-face {
+    font-family: 'Fira Mono';
+    font-style: normal;
+    font-weight: 400;
+    src: local('Fira Mono Regular'), local('FiraMono-Regular'), url(https://fonts.gstatic.com/s/firamono/v7/N0bX2SlFPv1weGeLZDtgK_7SodY.woff2) format('woff2');
+    unicode-range: U+0460-052F, U+1C80-1C88, U+20B4, U+2DE0-2DFF, U+A640-A69F, U+FE2E-FE2F;
+}
+
+/* cyrillic */
+
+@font-face {
+    font-family: 'Fira Mono';
+    font-style: normal;
+    font-weight: 400;
+    src: local('Fira Mono Regular'), local('FiraMono-Regular'), url(https://fonts.gstatic.com/s/firamono/v7/N0bX2SlFPv1weGeLZDtgIv7SodY.woff2) format('woff2');
+    unicode-range: U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116;
+}
+
+@font-face {
+    font-family: 'Fira Mono';
+    font-style: normal;
+    font-weight: 400;
+    src: local('Fira Mono Regular'), local('FiraMono-Regular'), url(https://fonts.gstatic.com/s/firamono/v7/N0bX2SlFPv1weGeLZDtgKv7SodY.woff2) format('woff2');
+    unicode-range: U+1F00-1FFF;
+}
+
+/* greek */
+
+@font-face {
+    font-family: 'Fira Mono';
+    font-style: normal;
+    font-weight: 400;
+    src: local('Fira Mono Regular'), local('FiraMono-Regular'), url(https://fonts.gstatic.com/s/firamono/v7/N0bX2SlFPv1weGeLZDtgJf7SodY.woff2) format('woff2');
+    unicode-range: U+0370-03FF;
+}
+
+/* latin-ext */
+
+@font-face {
+    font-family: 'Fira Mono';
+    font-style: normal;
+    font-weight: 400;
+    src: local('Fira Mono Regular'), local('FiraMono-Regular'), url(https://fonts.gstatic.com/s/firamono/v7/N0bX2SlFPv1weGeLZDtgKP7SodY.woff2) format('woff2');
+    unicode-range: U+0100-024F, U+0259, U+1E00-1EFF, U+2020, U+20A0-20AB, U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+
+/* latin */
+
+@font-face {
+    font-family: 'Fira Mono';
+    font-style: normal;
+    font-weight: 400;
+    src: local('Fira Mono Regular'), local('FiraMono-Regular'), url(https://fonts.gstatic.com/s/firamono/v7/N0bX2SlFPv1weGeLZDtgJv7S.woff2) format('woff2');
+    unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}

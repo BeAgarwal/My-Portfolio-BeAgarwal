@@ -1,0 +1,117 @@
+<html>
+<head>
+	<meta charset="utf-8">
+    <meta name="keywords" content="Shubham Agarwal, Bijnor, Shubham, Agarwal, BeAgarwal">
+	<meta name="author" content="Shubham Agarwal">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+
+	<title>Shubham Agarwal</title>
+	<link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="assets/css/styles.css"></head>
+
+<body onload="myFunction()" style="margin:0;">
+		<div id="loader">
+		</div>
+		<div id="command">
+		<p>
+			 BEGIN<br>
+			 SELECT <b>BEAGARWAL.COM</b> FROM WEBSERVER;<br>
+			 END;</p></div>
+		<div style="display:none;" id="myDiv" class="animate-bottom">
+    	<nav class="navbar navbar-light navbar-expand-xl sticky-top">
+        	<div class="container-fluid">
+                <a class="navbar-brand" href="https://www.beagarwal.com">
+                    <img class="float-left" src="assets/img/logo.png" id="beagarwallogo">
+                </a>
+                <button class="navbar-toggler" data-toggle="collapse" data-target="#navcol-1">
+                    <span class="sr-only" id="toggleNav">Toggle navigation</span>
+                    <span class="navbar-toggler-icon text-monospace" id="toggleNavIcon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navcol-1">
+                    <ul class="nav navbar-nav ml-auto">
+                        <li class="nav-item" role="presentation"><a class="nav-link active" href="http://www.beagarwal.com"><i class="fa fa-home"></i> Home();</a></li>
+                      
+                        <li class="nav-item" role="presentation"><a class="nav-link" href="./project.html"><i class="fa fa-star"></i> Projects();</a></li>
+
+                        <li class="nav-item" role="presentation"><a class="nav-link" href="./gallery.html"><i class="fa fa-newspaper-o"></i> Resume();</a></li>
+
+                        <li class="nav-item" role="presentation"><a class="nav-link" href="./contact.html"><i class="fa fa-envelope"></i> Profile();</a></li>
+                    </ul>
+                    
+                </div>    
+            </div></nav>
+
+
+    <div>
+    	<img id="welcome" src="assets/img/bck.png">
+    </div>
+    <div>
+        <img id="welcome" src="assets/img/pic.png">
+    </div>
+    <div id="aboutme">
+        <h2 style="color: black;"><b>About me</b></h2>
+        <p style="font-size: 20px;" align="justify">I'm a MCA student at College of Engineering Guindy, Anna University Chennai, Tamil Nadu, India.<br> I graduated from Graphic Era Deemed to be University, Dehradun, India in 2019. I have a degree in Computer Application.<br>I have completed my schooling in 2016 from St Marys School, Bijnor, Uttar Pradesh, India.<br>When it comes to work, I believe in continuous learning and self-improvement, keeping it DRY(Don't Repeat Yourself), and using spaces over tabs. <br>I enjoy eating sweets, dark chocolate, fast food, mangoes, and almost anything that has cheese in it. <br><br>
+            <b>Summary of Technical Skills-</b><br>
+            Programming:<br>
+               &nbsp;&nbsp;&#8226;Proficient: Python, C, C++, Java, PHP<br>
+                &nbsp;&nbsp;&#8226;Familier: C#<br>
+            Database Servers:<br>
+                &nbsp;&nbsp;&#8226;Proficient: Oracle, MySql, PostgreSql<br>
+                &nbsp;&nbsp;&#8226;Familier: MongoDB, OrientDB<br>
+            Libraries:<br>
+                &nbsp;&nbsp;&#8226;Scikit-Learn, Pandas, NLTK, Numpy, Matplotlib<br>
+            Web framework:<br>
+                &nbsp;&nbsp;&#8226;Django<br>
+        </p>
+    </div>
+
+
+
+    
+
+    <div id="footer">
+	    <div class="container">
+	    	<center><a href="https://www.beagarwal.com"> <img src="assets/img/logo.png" style="width: 240px; height: 80px;"></a></center><br>
+	    	<center><h4 style="color: white;">Shubham Agarwal</h4></center>
+	        <center><p style="color: #fff;">Bijnor -246701<br>Uttar Pradesh, India</p></center>
+	        
+	        <div class="social-ul-div">
+	    		<ul class="social-ul">
+	                    <li>
+	                        <a class="fa fa-facebook" href="https://www.facebook.com/beagarwal"></a>
+	                        <a class="fa fa-github" href="https://github.com/BeAgarwal/"></a>
+	                        <a class="fa fa-linkedin" href="https://in.linkedin.com/in/beagarwal"></a>
+	                        <a class="fa fa-twitter" href="https://twitter.com/BeAgarwal"></a>
+	                    </li>
+	                </ul>
+	  		</div>
+
+	        <center> <p style="color: white;">Designed and built by Shubham Agarwal</p></center>
+	    </div>    </div>
+</div>
+    <script src="assets/js/jquery.min.js"></script>
+    <script src="assets/bootstrap/js/bootstrap.min.js"></script>
+    <script src="assets/js/vanta.waves.min.js"></script> 
+    <script src="assets/js/three.r95.min.js"></script> 
+
+    <script> 
+        // Run JavaScript Only After Entire Page Has Loaded
+        $(window).bind("load", function() {
+            VANTA.WAVES({ el: "#waveBackground", color: 0x101010, shininess: 20.00, waveHeight: 25.00, waveSpeed: 2, zoom: 0.7 })
+        });
+
+    var myVar;
+
+	function myFunction() {
+  		myVar = setTimeout(showPage, 3000);
+	}
+
+	function showPage() {
+  		document.getElementById("loader").style.display = "none";
+  		document.getElementById("command").style.display = "none";
+  		document.getElementById("myDiv").style.display = "block";
+	}</script>
+</body>
+</html>
