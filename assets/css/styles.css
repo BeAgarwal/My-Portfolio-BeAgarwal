@@ -266,7 +266,7 @@ body {
   text-align: center;
   background: white;
   color: #18252A;
-  font-size: 30px;
+  font-size: 5vw;
   font-family: 'Fira Mono', monospace;
 }
 #facebookContainer{
@@ -355,7 +355,7 @@ body {
   text-align: center;
   background: white;
   color: #18252A;
-  font-size: 30px;
+  font-size: 5vw;
   font-family: 'Fira Mono', monospace;
   height: 150px;
   margin-top: 150px;
