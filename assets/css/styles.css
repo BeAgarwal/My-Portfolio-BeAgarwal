@@ -183,7 +183,7 @@ body {
 #sideContainer{
   background-color: white;
   font-size: 20px;
-  width: 25%;
+  width: auto;
   padding-left: 10px;
   font-family: 'Fira Mono', monospace;
   margin: 20px;
