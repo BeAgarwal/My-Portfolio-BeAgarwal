@@ -1,64 +1,92 @@
 #loader {
-  position: absolute;
-  left: 50%;
-  top: 50%;
-  z-index: 1;
-  width: 150px;
-  height: 150px;
-  margin: -75px 0 0 -75px;
-  border: 16px solid #f3f3f3;
-  border-radius: 50%;
-  border-top: 16px solid #000000;
-  width: 120px;
-  height: 120px;
-  -webkit-animation: spin 2s linear infinite;
-  animation: spin 2s linear infinite;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    z-index: 1;
+    width: 150px;
+    height: 150px;
+    margin: -75px 0 0 -75px;
+    border: 16px solid #f3f3f3;
+    border-radius: 50%;
+    border-top: 16px solid #000000;
+    width: 120px;
+    height: 120px;
+    -webkit-animation: spin 2s linear infinite;
+    animation: spin 2s linear infinite;
 }
+
 #command {
     position: absolute;
-  margin: -75px 0 0 -75px;
-  font-size: 18px;
-  top: 80%;
-  float: left;
-  left: 40%;
-  height: 120px;
+    margin: -75px 0 0 -75px;
+    font-size: 18px;
+    top: 80%;
+    float: left;
+    left: 40%;
+    height: 120px;
 }
+
 @-webkit-keyframes spin {
-  0% { -webkit-transform: rotate(0deg); }
-  100% { -webkit-transform: rotate(360deg); }
+    0% {
+        -webkit-transform: rotate(0deg);
+    }
+
+    100% {
+        -webkit-transform: rotate(360deg);
+    }
 }
 
 @keyframes spin {
-  0% { transform: rotate(0deg); }
-  100% { transform: rotate(360deg); }
+    0% {
+        transform: rotate(0deg);
+    }
+
+    100% {
+        transform: rotate(360deg);
+    }
 }
+
 #myDiv {
-  display: none;
-  text-align: center;
+    display: none;
 }
 
 /* Add animation to "page content" */
 .animate-bottom {
-  position: relative;
-  -webkit-animation-name: animatebottom;
-  -webkit-animation-duration: 1s;
-  animation-name: animatebottom;
-  animation-duration: 1s
+    position: relative;
+    -webkit-animation-name: animatebottom;
+    -webkit-animation-duration: 1s;
+    animation-name: animatebottom;
+    animation-duration: 1s
 }
 
 @-webkit-keyframes animatebottom {
-  from { bottom:-100px; opacity:0 } 
-  to { bottom:0px; opacity:1 }
+    from {
+        bottom: -100px;
+        opacity: 0
+    }
+
+    to {
+        bottom: 0px;
+        opacity: 1
+    }
 }
 
-@keyframes animatebottom { 
-  from{ bottom:-100px; opacity:0 } 
-  to{ bottom:0; opacity:1 }
+@keyframes animatebottom {
+    from {
+        bottom: -100px;
+        opacity: 0
+    }
+
+    to {
+        bottom: 0;
+        opacity: 1
+    }
 }
-#beagarwallogo{
+
+#beagarwallogo {
     width: auto;
     height: 55px;
 }
+
 .navbar.navbar-light.navbar-expand-xl.sticky-top {
     box-shadow: 0px 0px 20px #CCCCCC;
     background-color: #18252A;
@@ -72,6 +100,7 @@
     border-width: 0px 0px 1px 0px;
     border-color: rgb(66, 0, 10);
 }
+
 .nav-item {
     padding: 10px;
 }
@@ -85,7 +114,8 @@
     color: white !important;
     background-color: #2AA19B !important;
     border-radius: 10px;
-    box-shadow: 0px 0px 10px #993333;  /* bright */
+    box-shadow: 0px 0px 10px #993333;
+    /* bright */
     font-weight: normal;
 }
 
@@ -103,7 +133,8 @@
     color: white !important;
     background-color: # !important;
     border-radius: 10px;
-    box-shadow: 0px 0px 10px #CCCCCC; /* bright */
+    box-shadow: 0px 0px 10px #CCCCCC;
+    /* bright */
     font-weight: normal;
 }
 
@@ -121,7 +152,11 @@
     text-align: center;
 }
 
-.fa.fa-home, .fa.fa-star, .fa.fa-photo, .fa.fa-newspaper-o, .fa.fa-envelope {
+.fa.fa-home,
+.fa.fa-star,
+.fa.fa-photo,
+.fa.fa-newspaper-o,
+.fa.fa-envelope {
     margin-right: 5px;
     margin-left: 0px;
     margin-top: 5px;
@@ -140,57 +175,165 @@ body {
 
 
 
-#footer{
+#footer {
     width: 100%;
     min-height: 100px;
     font-family: 'Fira Mono', monospace;
     position: relative;
     background-color: #18252A;
-    top: 50px;
 }
+
 .social-ul-div {
     text-align: center;
 }
 
 .social-ul-div .fa {
-  padding-right: 30px;
-  font-size: 35px;
-  color: white;
-  text-decoration: none;
+    padding-right: 30px;
+    font-size: 35px;
+    color: white;
+    text-decoration: none;
 }
+
 /* ------------------------------------------------INDEX PAGE CSS-------------------------------------------*/
+.main {
+    min-height: 100vh;
+    background-image: url("../img/skimage2.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    height: auto;
+    padding: 15px;
+}
+
+
+.main .full-screen {
+    min-height: 100vh;
+}
+
+.main .main-content {
+    flex: 0 0 100%;
+    max-width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+}
+
+.main .main-content .block {
+    flex: 0 0 75%;
+    max-width: 75%;
+    padding-left: 35px;
+    border-left: 5px solid white;
+    margin-top: 50px;
+}
+
+.main .main-content .block h6 {
+    color: white;
+    font-size: 25px;
+    font-weight: 500;
+    margin: 0;
+    padding: 0;
+}
+
+.main .main-content .block {
+    font-family: 'ProximaNova';
+}
+
+.main .main-content .block h1 {
+    color: white;
+    font-size: 40px;
+    font-weight: 600;
+    font-family: 'Sacramento', cursive;
+    text-transform: none;
+    margin: 0 0 10px;
+    padding: 0;
+}
+
+.main .main-content .block h3 {
+    color: white;
+    font-size: 25px;
+    font-weight: 500;
+    margin: 0;
+    padding: 0;
+}
+
+.main .main-content .block .cv-btn {
+    padding-top: 10px;
+}
+
+.main .main-content .block .cv-btn a {
+    border-radius: 4px;
+    color: white;
+    border: 1px solid white;
+    padding: 12px 25px;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 15px;
+    text-transform: uppercase;
+    font-weight: 600;
+    transition: all .5s ease;
+    background-color: transparent;
+}
+
+.main .main-content .block .cv-btn a:hover {
+    background-color: white;
+    color: cadetblue;
+}
+
+.container {
+    max-width: 1140px;
+    margin: auto;
+}
+
+.row {
+    display: flex;
+    flex-wrap: wrap;
+}
+
 #welcome {
     width: 100%;
     height: auto;
 }
-#aboutme{
-    font-family: 'Fira Mono', monospace;
-    color: white;
-    width: 90%;
-    margin: auto;
 
+#aboutme {
+    background-color: white;
+    color: black;
+    width: 100%;
+    height: auto;
 }
+
+#aboutcontent {
+    font-family: 'Fira Mono', monospace;
+    width: 90%;
+    color: black;
+    height: auto;
+    text-align: center;
+    margin: auto;
+    font-weight: 500;
+}
+
+
 /* ------------------------------------------------GALLERY PAGE CSS-------------------------------------------*/
 
-#gallerycontainer{
-  height: auto;
-  width: auto;
-  text-align: center;
-  color: white;
-  font-size: 5vw;
-  margin: 150px;
+#gallerycontainer {
+    height: auto;
+    width: auto;
+    text-align: center;
+    color: white;
+    font-size: 5vw;
+    margin: 150px;
 }
+
 /* ------------------------------------------------PROJECT PAGE CSS-------------------------------------------*/
-#sideContainer{
-  background-color: white;
-  font-size: 20px;
-  width: auto;
-  padding-left: 10px;
-  font-family: 'Fira Mono', monospace;
-  margin: 20px;
-  box-shadow: 0px 0px 15px black;
-  border-radius: 5px;
-  border-width: 1px;
+#sideContainer {
+    background-color: white;
+    font-size: 20px;
+    width: auto;
+    padding-left: 10px;
+    font-family: 'Fira Mono', monospace;
+    margin: 20px;
+    box-shadow: 0px 0px 15px black;
+    border-radius: 5px;
+    border-width: 1px;
 }
 
 #projectContainer {
@@ -249,12 +392,14 @@ body {
     margin-bottom: 0px;
     font-size: 14px;
 }
+
 #submitor {
     background-color: #2AA19B;
     padding-bottom: 16px;
     margin-bottom: 0px;
 }
-#submitor:hover{
+
+#submitor:hover {
     background-color: #3ACAC3;
 }
 
@@ -262,104 +407,116 @@ body {
 /* ------------------------------------------------CONTACT PAGE CSS-------------------------------------------*/
 
 .header {
-  padding: 60px;
-  text-align: center;
-  background: white;
-  color: #18252A;
-  font-size: 5vw;
-  font-family: 'Fira Mono', monospace;
+    padding: 60px;
+    text-align: center;
+    background: white;
+    color: #18252A;
+    font-size: 5vw;
+    font-family: 'Fira Mono', monospace;
 }
-#facebookContainer{
-  background-color: #3b5998;
-  font-size: 25px;
-  border-color: black;
-  width: auto;
-  text-align: center;
-  padding-left: 20px;
-  font-family: 'Fira Mono', monospace;
-  margin: 20px;
-  box-shadow: 0px 0px 15px black;
-  border-radius: 5px;
-  border-color: rgb(66, 0, 10);
+
+#facebookContainer {
+    background-color: #3b5998;
+    font-size: 25px;
+    border-color: black;
+    width: auto;
+    text-align: center;
+    padding-left: 20px;
+    font-family: 'Fira Mono', monospace;
+    margin: 20px;
+    box-shadow: 0px 0px 15px black;
+    border-radius: 5px;
+    border-color: rgb(66, 0, 10);
 }
-#facebookContainer a:hover{
+
+#facebookContainer a:hover {
     text-decoration: none;
 }
-#githubContainer{
-  background-color: #211F1F;
-  font-size: 25px;
-  border-color: black;
-  width: auto;
-  text-align: center;
-  padding-left: 20px;
-  font-family: 'Fira Mono', monospace;
-  margin: 20px;
-  box-shadow: 0px 0px 15px black;
-  border-radius: 5px;
-  border-color: rgb(66, 0, 10);
+
+#githubContainer {
+    background-color: #211F1F;
+    font-size: 25px;
+    border-color: black;
+    width: auto;
+    text-align: center;
+    padding-left: 20px;
+    font-family: 'Fira Mono', monospace;
+    margin: 20px;
+    box-shadow: 0px 0px 15px black;
+    border-radius: 5px;
+    border-color: rgb(66, 0, 10);
 }
-#githubContainer a:hover{
+
+#githubContainer a:hover {
     text-decoration: none;
 }
-#linkedinContainer{
-  background-color: #0e76a8;
-  font-size: 25px;
-  border-color: black;
-  text-align: center;
-  width: auto;
-  padding-left: 20px;
-  font-family: 'Fira Mono', monospace;
-  margin: 20px;
-  box-shadow: 0px 0px 15px black;
-  border-radius: 5px;
-  border-color: rgb(66, 0, 10);
+
+#linkedinContainer {
+    background-color: #0e76a8;
+    font-size: 25px;
+    border-color: black;
+    text-align: center;
+    width: auto;
+    padding-left: 20px;
+    font-family: 'Fira Mono', monospace;
+    margin: 20px;
+    box-shadow: 0px 0px 15px black;
+    border-radius: 5px;
+    border-color: rgb(66, 0, 10);
 }
-#linkedinContainer a:hover{
+
+#linkedinContainer a:hover {
     text-decoration: none;
     background-color: black;
 }
-#twitterContainer{
-  background-color: #00acee;
-  font-size: 25px;
-  border-color: black;
-  width: auto;
-  text-align: center;
-  margin: 20px;
-  padding-left: 20px;
-  font-family: 'Fira Mono', monospace;
-  box-shadow: 0px 0px 15px black;
-  border-radius: 5px;
-  border-color: rgb(66, 0, 10);
+
+#twitterContainer {
+    background-color: #00acee;
+    font-size: 25px;
+    border-color: black;
+    width: auto;
+    text-align: center;
+    margin: 20px;
+    padding-left: 20px;
+    font-family: 'Fira Mono', monospace;
+    box-shadow: 0px 0px 15px black;
+    border-radius: 5px;
+    border-color: rgb(66, 0, 10);
 }
-#twitterContainer a:hover{
+
+#twitterContainer a:hover {
     text-decoration: none;
 }
-#codesignalContainer{
-  background-color: #0093cc;
-  font-size: 25px;
-  border-color: black;
-  width: auto;
-  text-align: center;
-  margin: 20px;
-  padding-left: 20px;
-  font-family: 'Fira Mono', monospace;
-  box-shadow: 0px 0px 15px black;
-  border-radius: 5px;
-  border-color: rgb(66, 0, 10);
+
+#codesignalContainer {
+    background-color: #0093cc;
+    font-size: 25px;
+    border-color: black;
+    width: auto;
+    text-align: center;
+    margin: 20px;
+    padding-left: 20px;
+    font-family: 'Fira Mono', monospace;
+    box-shadow: 0px 0px 15px black;
+    border-radius: 5px;
+    border-color: rgb(66, 0, 10);
 }
-#codesignalContainer a:hover{
+
+#codesignalContainer a:hover {
     text-decoration: none;
 }
+
 .header2 {
-  padding: 60px;
-  text-align: center;
-  background: white;
-  color: #18252A;
-  font-size: 5vw;
-  font-family: 'Fira Mono', monospace;
-  height: 150px;
-  margin-top: 150px;
+    padding: 60px;
+    text-align: center;
+    background: white;
+    color: #18252A;
+    font-size: 5vw;
+    font-family: 'Fira Mono', monospace;
+    height: 150px;
+    margin-top: 150px;
 }
+
 /*FONT CSS*/
 
 @font-face {
