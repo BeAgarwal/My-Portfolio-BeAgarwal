@@ -45,9 +45,6 @@
     }
 }
 
-#myDiv {
-    display: none;
-}
 
 /* Add animation to "page content" */
 .animate-bottom {
@@ -131,7 +128,7 @@
 
 .nav-item a.active {
     color: white !important;
-    background-color: # !important;
+    /* background-color: !important; */
     border-radius: 10px;
     box-shadow: 0px 0px 10px #CCCCCC;
     /* bright */
@@ -181,6 +178,10 @@ body {
     font-family: 'Fira Mono', monospace;
     position: relative;
     background-color: #18252A;
+    bottom: 0px;
+    clear: both;
+    padding-bottom: 1px;
+    /* padding-top: 1px; */
 }
 
 .social-ul-div {
@@ -188,8 +189,8 @@ body {
 }
 
 .social-ul-div .fa {
-    padding-right: 30px;
-    font-size: 35px;
+    padding-right: 20px;
+    font-size: 25px;
     color: white;
     text-decoration: none;
 }
@@ -298,6 +299,7 @@ body {
     background-color: white;
     color: black;
     width: 100%;
+    padding-bottom: 1px;
     height: auto;
 }
 
@@ -311,17 +313,6 @@ body {
     font-weight: 500;
 }
 
-
-/* ------------------------------------------------GALLERY PAGE CSS-------------------------------------------*/
-
-#gallerycontainer {
-    height: auto;
-    width: auto;
-    text-align: center;
-    color: white;
-    font-size: 5vw;
-    margin: 150px;
-}
 
 /* ------------------------------------------------PROJECT PAGE CSS-------------------------------------------*/
 #sideContainer {
@@ -404,120 +395,7 @@ body {
 }
 
 
-/* ------------------------------------------------CONTACT PAGE CSS-------------------------------------------*/
-
-.header {
-    padding: 60px;
-    text-align: center;
-    background: white;
-    color: #18252A;
-    font-size: 5vw;
-    font-family: 'Fira Mono', monospace;
-}
-
-#facebookContainer {
-    background-color: #3b5998;
-    font-size: 25px;
-    border-color: black;
-    width: auto;
-    text-align: center;
-    padding-left: 20px;
-    font-family: 'Fira Mono', monospace;
-    margin: 20px;
-    box-shadow: 0px 0px 15px black;
-    border-radius: 5px;
-    border-color: rgb(66, 0, 10);
-}
-
-#facebookContainer a:hover {
-    text-decoration: none;
-}
-
-#githubContainer {
-    background-color: #211F1F;
-    font-size: 25px;
-    border-color: black;
-    width: auto;
-    text-align: center;
-    padding-left: 20px;
-    font-family: 'Fira Mono', monospace;
-    margin: 20px;
-    box-shadow: 0px 0px 15px black;
-    border-radius: 5px;
-    border-color: rgb(66, 0, 10);
-}
-
-#githubContainer a:hover {
-    text-decoration: none;
-}
-
-#linkedinContainer {
-    background-color: #0e76a8;
-    font-size: 25px;
-    border-color: black;
-    text-align: center;
-    width: auto;
-    padding-left: 20px;
-    font-family: 'Fira Mono', monospace;
-    margin: 20px;
-    box-shadow: 0px 0px 15px black;
-    border-radius: 5px;
-    border-color: rgb(66, 0, 10);
-}
-
-#linkedinContainer a:hover {
-    text-decoration: none;
-    background-color: black;
-}
-
-#twitterContainer {
-    background-color: #00acee;
-    font-size: 25px;
-    border-color: black;
-    width: auto;
-    text-align: center;
-    margin: 20px;
-    padding-left: 20px;
-    font-family: 'Fira Mono', monospace;
-    box-shadow: 0px 0px 15px black;
-    border-radius: 5px;
-    border-color: rgb(66, 0, 10);
-}
-
-#twitterContainer a:hover {
-    text-decoration: none;
-}
-
-#codesignalContainer {
-    background-color: #0093cc;
-    font-size: 25px;
-    border-color: black;
-    width: auto;
-    text-align: center;
-    margin: 20px;
-    padding-left: 20px;
-    font-family: 'Fira Mono', monospace;
-    box-shadow: 0px 0px 15px black;
-    border-radius: 5px;
-    border-color: rgb(66, 0, 10);
-}
-
-#codesignalContainer a:hover {
-    text-decoration: none;
-}
-
-.header2 {
-    padding: 60px;
-    text-align: center;
-    background: white;
-    color: #18252A;
-    font-size: 5vw;
-    font-family: 'Fira Mono', monospace;
-    height: 150px;
-    margin-top: 150px;
-}
-
-/*FONT CSS*/
+/*-------------------------------------------FONT CSS--------------------------------------------*/
 
 @font-face {
     font-family: 'Fira Mono';
